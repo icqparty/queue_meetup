@@ -52,8 +52,8 @@ function process_message(\PhpAmqpLib\Message\AMQPMessage $message)
     }
 }
 /*
-    queue: Queue from where to get the messages
-    consumer_tag: Consumer identifier
+    queue: Имя очереди из которой наш воркер будет ожидать и обрабатывать сообщения
+    consumer_tag: Название обработчика под каторым воркер регестрируется
     no_local: Don't receive messages published by this consumer.
     no_ack: Tells the server if the consumer will acknowledge the messages.
     exclusive: Request exclusive consumer access, meaning only this consumer can access the queue
